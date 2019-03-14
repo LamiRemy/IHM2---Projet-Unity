@@ -10,3 +10,7 @@ Bref, voici la marche à suivre pour vous syncroniser:
 Étape 4: Et bonsoir !
 
 Ceci est une expérience : j'espère que ça rendra plus simple le partage de fichiers entre nous que via Google Drive, mais j'ai tout de même peur qu'on s'écrase les modifications les uns les autres... À tester on avisera après !
+
+
+Pour upload les modifications, on va dans l'app GitHub desktop, il y a la liste des fichiers qu'on a ajouté et/ou modifié dans le volet de gauche.
+Faut ajouter une petite descrition des modifs ou ajouts dans le volet "Summary (required)" et cliquer sur "Commit to master" : une fois cela fait GitHub se charge de tout et est même censé conserver un historique des modifications !  
