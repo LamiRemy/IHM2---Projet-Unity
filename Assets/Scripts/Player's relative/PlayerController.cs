@@ -46,12 +46,19 @@ public class PlayerController : MonoBehaviour {
         playerAnim.SetBool("IsGrounded", grounded);
 
 
-        move = Input.GetAxis("Horizontal");
+        
 
-        if (isOnLadder)
-            player.velocity = new Vector2(0, move * playerMaxSpeed); // Montée à l'échelle
+        if (isOnLadder && Input.GetKey(KeyCode.UpArrow))
+        {
+            move = Input.GetAxis("Vertical");
+            player.velocity = new Vector2(player.velocity.x, move * playerMaxSpeed); // Montée à l'échelle
+        }
         else
+        {
+            move = Input.GetAxis("Horizontal");
             player.velocity = new Vector2(move * playerMaxSpeed, player.velocity.y);
+        }
+            
 
         playerAnim.SetFloat("MoveSpeed", Mathf.Abs(move)); // Stocke la valeur de la variable move dans la variable MoveSpeed
 
