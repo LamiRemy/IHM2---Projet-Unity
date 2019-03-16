@@ -29,7 +29,6 @@ public class GUIController : MonoBehaviour {
 
     public void Start()
     {
-
         switch (currentLevel) // Pour l'affichage du numéro du niveau
         {
             case "Level1":
@@ -60,7 +59,6 @@ public class GUIController : MonoBehaviour {
     public void actualizeCoinView(int coinNumber)
     {
         coinText.text = coinNumber.ToString(); // Actualisation du compteur
-
     }
 
 
@@ -72,7 +70,6 @@ public class GUIController : MonoBehaviour {
             Time.timeScale = 0; // Met l'échelle de temps à 0
             pauseMenu.gameObject.SetActive(true);
             pauseButton.alpha = 0; // Met le canvas en transparent (on peut cliquer sur l'emplacement du bouton pour enlever la pause alors qu'il est masqué)
-
         }
 
         else if (Time.timeScale == 0)
@@ -80,7 +77,6 @@ public class GUIController : MonoBehaviour {
             Time.timeScale = 1;
             pauseMenu.gameObject.SetActive(false);
             pauseButton.alpha = 1;
-
         }
 
     }
@@ -123,14 +119,12 @@ public class GUIController : MonoBehaviour {
     {
         SceneManager.UnloadSceneAsync(currentLevel);
         SceneManager.LoadSceneAsync(currentLevel);
-
     }
 
 
     public void quitGame() // Quit
     {
         Application.Quit();
-
     }
 
 }

@@ -78,4 +78,9 @@ public class PlayerController : MonoBehaviour {
         isOnLadder = input;
     }
 
+    public void Teleport(float x, float y)
+    {
+        player.transform.position = new Vector2(x, y);
+    }
+
 }
