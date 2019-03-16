@@ -5,7 +5,13 @@ using UnityEngine;
 public class PortailController : MonoBehaviour
 {
     public Collider2D secontPortail;
-    private bool isComming = false;
+    private static bool isComming;
+
+
+    public void Start()
+    {
+        isComming = false;
+    }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -13,20 +19,15 @@ public class PortailController : MonoBehaviour
         {
             if (!isComming)
             {
+                isComming = true;
                 print("Teleport");
                 float x = secontPortail.transform.position.x;
                 float y = secontPortail.transform.position.y;
                 collision.GetComponent<PlayerController>().Teleport(x, y);
             }
+            else if (isComming)
+                isComming = false;
         }
-    }
-
-    public void OnTriggerExit2D(Collider2D collision)
-    {
-        if (isComming)
-            isComming = false;
-        else
-            isComming = true;
     }
 
 }
