@@ -13,6 +13,9 @@ Ceci est une expérience : j'espère que ça rendra plus simple le partage de fi
 
 
 Pour upload les modifications, on va dans l'app GitHub desktop, il y a la liste des fichiers qu'on a ajouté et/ou modifié dans le volet de gauche.
-Faut ajouter une petite descrition des modifs ou ajouts dans le volet "Summary (required)" et cliquer sur "Commit to master" : une fois cela fait GitHub se charge de tout et est même censé conserver un historique des modifications !  
+Cliquer sur "fletch origin"
+Faut ajouter une petite descrition des modifs ou ajouts dans le volet "Summary (required)" et cliquer sur "Commit to master", puis faire Ctrl+P : une fois cela fait GitHub se charge de tout et est même censé conserver un historique des modifications !  
 
 Une petite source de ce que je raconte pour Unity : https://www.studica.com/blog/how-to-setup-github-with-unity-step-by-step-instructions
+
+Faut aussi se faire une liste de qui s'occupe de quel fichier histoire de pas se marcher sur les uns les autres et de pas s'entre-écraser nos données (pas envie de tester la fonction de récupération vvoyez... ^^).
