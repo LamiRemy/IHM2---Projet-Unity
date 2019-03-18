@@ -48,7 +48,7 @@ public class PlayerController : MonoBehaviour {
 
         
 
-        if (isOnLadder && Input.GetKey(KeyCode.UpArrow))
+        if (isOnLadder && Input.GetAxis("Vertical") > 0) //Précedent Input.GetKey(KeyCode.UpArrow)
         {
             move = Input.GetAxis("Vertical");
             player.velocity = new Vector2(player.velocity.x, move * playerMaxSpeed); // Montée à l'échelle
