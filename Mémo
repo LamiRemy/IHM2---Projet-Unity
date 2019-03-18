@@ -1,0 +1,5 @@
+Pour les annimations :
+Le script édite deux variables
+1) IsGrounded : si le joueur est au sol ou non
+2) MoveSpeed : Utile pour mettre un échelon s'il y a plusieurs annimations de course
+
