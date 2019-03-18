@@ -11,12 +11,25 @@ public class Singleton<T> : MonoBehaviour where T : Singleton<T>
         get { return instance; }
     }
 
-    private void Awake()
+    public bool IsInitialized()
+    {
+        if (instance == null)
+            return false;
+        else
+            return true;
+    }
+
+    protected virtual void Awake()
     {
         if (instance != null)
             Debug.LogError("[Singleton] Trying to instantiate a second instance of a singleton class.");
         else
             instance = (T)this;
     }
-    // Page 16 !
+
+    protected virtual void OnDestroy()
+    {
+        if (instance == (T)this)
+            instance = null;
+    }
 }

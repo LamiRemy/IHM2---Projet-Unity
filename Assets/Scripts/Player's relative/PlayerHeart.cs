@@ -6,14 +6,14 @@ using UnityEngine;
 public class PlayerHeart : MonoBehaviour {
 
     // Données pour la gestion de l'affichage des coeurs
-    public Image heart1;
-    public Image damagedHeart1;
-    public Image heart2;
-    public Image damagedHeart2;
-    public Image heart3;
-    public Image damagedHeart3;
+    [SerializeField] Image heart1;
+    [SerializeField] Image damagedHeart1;
+    [SerializeField] Image heart2;
+    [SerializeField] Image damagedHeart2;
+    [SerializeField] Image heart3;
+    [SerializeField] Image damagedHeart3;
 
-    public GameObject GUI;
+    [SerializeField] GameObject GUI;
 
     // Fait gagner le joueur
     public void makeWin()
