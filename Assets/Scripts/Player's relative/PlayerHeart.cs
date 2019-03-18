@@ -18,14 +18,14 @@ public class PlayerHeart : MonoBehaviour {
     // Fait gagner le joueur
     public void makeWin()
     {
-        GUI.GetComponent<GUIController>().endGame(false); // Execution de la méthode de fin de jeu
+        // GUI.GetComponent<GUIController>().endGame(false); // Execution de la méthode de fin de jeu
 
     }
 
     // Mise à mort
     public void makeDead()
     {
-        GUI.GetComponent<GUIController>().endGame(true); // Execution de la méthode de fin de jeu
+        // GUI.GetComponent<GUIController>().endGame(true); // Execution de la méthode de fin de jeu
         Destroy(gameObject); // Détruit le gameObject courrant (ici le joueur)
 
     }

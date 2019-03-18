@@ -14,7 +14,7 @@ public class PlayerInventory : MonoBehaviour {
     void start()
     {
         // Mise a 0 du compteur (initialisation)
-        GUI.GetComponent<GUIController>().actualizeCoinView(coinNumber);
+        //GUI.GetComponent<GUIController>().actualizeCoinView(coinNumber);
 
     }
 
@@ -33,7 +33,7 @@ public class PlayerInventory : MonoBehaviour {
     {
         coinNumber++;
         print("Pièces récoltées : " + coinNumber); // DEBUG 
-        GUI.GetComponent<GUIController>().actualizeCoinView(coinNumber);
+        //GUI.GetComponent<GUIController>().actualizeCoinView(coinNumber);
 
     }
 
